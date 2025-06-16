@@ -98,8 +98,7 @@ Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 
 ## 📸 Screenshots
 
-| Blog List Page | Blog Detail & Reviews |
-|----------------|------------------------|
+
 ![image](https://github.com/user-attachments/assets/2202addc-8c2e-46b8-8371-76ff5c8ed27e)
 ![image](https://github.com/user-attachments/assets/30e1ad30-dcaf-4c35-bb54-27b1f0387c88)
 ![image](https://github.com/user-attachments/assets/8a550fb9-0b04-48ed-9465-f509695385f3)
