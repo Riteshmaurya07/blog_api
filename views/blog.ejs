@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<div class="blog-card">
+  <h1><%= blog.title %></h1>
+  <p><%= blog.content %></p>
+
+  <div class="review-section">
+    <h3>Reviews</h3>
+    <% reviews.forEach(r => { %>
+      <div class="review">
+        <strong><%= r.reviewer_name %></strong>: <%= r.comment %>
+      </div>
+    <% }) %>
+
+    <form action="/reviews/<%= blog.id %>" method="POST">
+      <input name="reviewer_name" placeholder="Your name" required />
+      <textarea name="comment" placeholder="Your review" required></textarea>
+      <button>Submit Review</button>
+    </form>
+  </div>
+</div>
+<a href="/">← Back to Home</a>
+<%- include('partials/footer') %>

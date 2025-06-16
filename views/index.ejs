@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<h1>All Blogs</h1>
+<a href="/create">Create New Blog</a>
+<% blogs.forEach(blog => { %>
+  <div class="blog-card">
+    <h2><a href="/blogs/<%= blog.id %>"><%= blog.title %></a></h2>
+    <form action="/delete/<%= blog.id %>" method="POST" onsubmit="return confirm('Delete?')">
+      <button>Delete</button>
+    </form>
+    <a href="/edit/<%= blog.id %>">Edit</a>
+  </div>
+<% }) %>
+<%- include('partials/footer') %>

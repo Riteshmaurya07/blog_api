@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<div class="blog-card">
+  <h1>Edit Blog</h1>
+  <form method="POST" action="/edit/<%= blog.id %>">
+    <input name="title" value="<%= blog.title %>" required />
+    <textarea name="content" required><%= blog.content %></textarea>
+    <button>Update</button>
+  </form>
+</div>
+<%- include('partials/footer') %>

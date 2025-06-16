@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<div class="blog-card">
+  <h1>Create Blog</h1>
+  <form method="POST" action="/create">
+    <input name="title" placeholder="Title" required />
+    <textarea name="content" placeholder="Content" required></textarea>
+    <button>Create</button>
+  </form>
+</div>
+<%- include('partials/footer') %>
